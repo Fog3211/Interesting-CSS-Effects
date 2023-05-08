@@ -1,0 +1,20 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+export interface Props extends HTMLAttributes<'a'> {
+  href: string;
+  children: string;
+}
+
+const { href, children, class: className='', ...restProps } = Astro.props;
+---
+
+<!-- TODO:link icon -->
+<a
+  target='_blank'
+  {...restProps}
+  class={`text-blue-500 hover:underline after:content-['⤴'] after:ml-0.5 after:text-red-500 ` + className}
+  href={href}
+>
+  {children}
+</a>
