@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import { menus } from '../constants';
+import { getMenuPath } from '../utils/common';
 ---
 
 <Layout>
@@ -19,7 +20,7 @@ import { menus } from '../constants';
                 {subMenu.children.map(menuItem => {
                   return (
                     <Card
-                      href={menuItem.path}
+                      href={getMenuPath(menus,menuItem)}
                       title={menuItem.title}
                       body={menuItem.description}
                     />
