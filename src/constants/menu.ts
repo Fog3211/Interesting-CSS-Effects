@@ -35,7 +35,13 @@ export const menus: IMenus[] = [
         title: '视频背景文字',
         path: '/video-bg-text',
         key: 'css-style__video-bg-text',
-        description: '使用CSS渐变实现的视频背景文字效果'
+        description: '使用视频作为文字的背景效果'
+      },
+      {
+        title: '旋转边框',
+        path: '/rotate-border',
+        key: 'css-style__rotate-border',
+        description: '旋转边框'
       },
     ]
   },

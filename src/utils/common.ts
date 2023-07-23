@@ -1,6 +1,6 @@
 import type { IMenuItem } from '../constants/menu'
 
-export function getMenuPath(menus: IMenuItem[], currentItem: IMenuItem, parentPath = ''): string {
+export function getMenuPath(menus: Omit<IMenuItem, 'description'>[], currentItem: IMenuItem, parentPath = ''): string {
   let fullPath = parentPath
 
   menus.forEach(menu => {
