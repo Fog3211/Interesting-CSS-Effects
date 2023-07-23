@@ -31,6 +31,12 @@ export const menus: IMenus[] = [
         key: 'css-style__taichi-text',
         description: '使用CSS渐变实现的太极文字效果'
       },
+      {
+        title: '视频背景文字',
+        path: '/video-bg-text',
+        key: 'css-style__video-bg-text',
+        description: '使用CSS渐变实现的视频背景文字效果'
+      },
     ]
   },
 ]
