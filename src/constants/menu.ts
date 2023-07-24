@@ -43,6 +43,12 @@ export const menus: IMenus[] = [
         key: 'css-style__rotate-border',
         description: '旋转边框'
       },
+      {
+        title: '扩散头像',
+        path: '/diffuse-avatar',
+        key: 'css-style__diffuse-avatar',
+        description: '头像扩散效果'
+      },
     ]
   },
 ]

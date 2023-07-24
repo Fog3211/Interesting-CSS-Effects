@@ -1,0 +1,36 @@
+<style>
+  .diffuse-avatar {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+  }
+  .avatar {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/avatar.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar::before,
+  .avatar::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .avatar::after {
+    background: inherit;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 0.8s;
+  }
+  .avatar:hover::after {
+    clip-path: circle(100% at 50% 50%);
+  }
+</style>
+
+<div class='diffuse-avatar'>
+  <div class='avatar'></div>
+</div>
