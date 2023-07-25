@@ -49,6 +49,12 @@ export const menus: IMenus[] = [
         key: 'css-style__diffuse-avatar',
         description: '头像扩散效果'
       },
+      {
+        title: '透明描边文字',
+        path: '/transparent-stroke-text',
+        key: 'css-style__transparent-stroke-text',
+        description: '透明描边文字'
+      },
     ]
   },
 ]
